@@ -45,7 +45,8 @@ class Rock_paper_scissors():
       return "Congratulations boy, YOU won the game"
     else:
       return "The game was a tie"
-game= Rock_paper_scissors(3)
+num=eval(input("How many rounds of the Rock-Paper-Scissors game do you want to play: "))
+game= Rock_paper_scissors(num)
 for i in range(game.round):
   print("Round {}".format(game.c_round))
   game.c_round+=1
